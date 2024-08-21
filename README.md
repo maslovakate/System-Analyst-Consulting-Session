@@ -61,11 +61,13 @@ print("Missing Values:\n", missing_values)
 data_types = df.dtypes
 
 # Print data types
-print("Data Types:\n", data_types)```
+print("Data Types:\n", data_types)
+```
 
 Another example is checking if certain columns that should contain only a specific set of values actually do.
 
-```# Suppose 'age' should only contain integers greater than 0
+```
+# Suppose 'age' should only contain integers greater than 0
 inconsistent_age = df[~df['age'].between(1, 100, inclusive='both')]
 
 # Print inconsistent age entries
