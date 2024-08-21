@@ -84,7 +84,7 @@ You can also use external reference data to cross-check the accuracy of certain 
 - **Definition:** Integrity refers to the logical coherence of the data, ensuring that relationships between data points are correct.
 - **Example:** Checking if all id values in one table exist in another (foreign key relationship).
 
-`# Sample DataFrames
+`Sample DataFrames
 df_customers = pd.DataFrame({
     'customer_id': [1, 2, 3, 4],
     'name': ['Alice', 'Bob', 'Charlie', 'David']
