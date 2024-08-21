@@ -7,7 +7,7 @@ However, as data becomes increasingly complex and diverse, there are limitations
 
 ## Benefits of Pandas Over SQL
 - **Working with Diverse Data Structures:**
- - **Pandas:**
+  - **Pandas:**
     - **Versatility with Different Data Types**. Pandas can handle a wide variety of data structures, including data from CSV files, Excel sheets, JSON, HTML tables, and even time-series data. This makes Pandas incredibly versatile for data analysts who often need to work with data from various sources beyond just relational databases.
     - **DataFrames and Series**. In Pandas, data is typically stored in DataFrames, which are 2D labeled data structures that can hold different types of data in each column (e.g., integers, floats, strings). Pandas also supports Series, which are 1D arrays that can be used for simpler datasets or individual columns of a DataFrame.
   - **SQL:**
