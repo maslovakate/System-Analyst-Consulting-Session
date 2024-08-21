@@ -34,7 +34,7 @@ In the realm of data analysis, the quality of the data you work with is paramoun
 - **Definition**: Completeness refers to the extent to which all required data is present.
 - **Example:** Checking for missing values in a DataFrame.
 
-`import pandas as pd
+```import pandas as pd
 
 # Sample DataFrame
 data = {
@@ -48,35 +48,35 @@ df = pd.DataFrame(data)
 missing_values = df.isnull().sum()
 
 # Print missing values
-print("Missing Values:\n", missing_values)`
+print("Missing Values:\n", missing_values)```
 
 ## 2. Consistency
 - **Definition:** Consistency ensures that data follows the same format or structure throughout the dataset.
 - **Example:** Checking for consistent data types in each column
 
-`# Check data types of each column
+```# Check data types of each column
 data_types = df.dtypes
 
 # Print data types
-print("Data Types:\n", data_types)`
+print("Data Types:\n", data_types)```
 
 Another example is checking if certain columns that should contain only a specific set of values actually do.
 
-`# Suppose 'age' should only contain integers greater than 0
+```# Suppose 'age' should only contain integers greater than 0
 inconsistent_age = df[~df['age'].between(1, 100, inclusive='both')]
 
 # Print inconsistent age entries
-print("Inconsistent Age Values:\n", inconsistent_age)`
+print("Inconsistent Age Values:\n", inconsistent_age)```
 
 ## 3. Accurancy
 - **Definition:** Accuracy ensures that data correctly reflects the real-world values it represents.
 - **Example:** Checking if the 'age' column contains only realistic ages.
 
-`# Assume realistic ages are between 0 and 120
+```# Assume realistic ages are between 0 and 120
 inaccurate_age = df[~df['age'].between(0, 120, inclusive='both')]
 
 # Print inaccurate age values
-print("Inaccurate Age Values:\n", inaccurate_age)`
+print("Inaccurate Age Values:\n", inaccurate_age)```
 
 You can also use external reference data to cross-check the accuracy of certain fields, such as addresses or product IDs.
 
@@ -84,7 +84,7 @@ You can also use external reference data to cross-check the accuracy of certain 
 - **Definition:** Integrity refers to the logical coherence of the data, ensuring that relationships between data points are correct.
 - **Example:** Checking if all id values in one table exist in another (foreign key relationship).
 
-`Sample DataFrames
+```Sample DataFrames
 df_customers = pd.DataFrame({
     'customer_id': [1, 2, 3, 4],
     'name': ['Alice', 'Bob', 'Charlie', 'David']
@@ -99,7 +99,7 @@ df_orders = pd.DataFrame({
 missing_customers = df_orders[~df_orders['customer_id'].isin(df_customers['customer_id'])]
 
 ## Print orders with missing customer references
-print("Orders with Missing Customer References:\n", missing_customers)`
+print("Orders with Missing Customer References:\n", missing_customers)```
 
 This will identify any rows in df_orders where the customer_id does not exist in df_customers, indicating a potential integrity issue.
 
