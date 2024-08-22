@@ -27,6 +27,24 @@ By leveraging both SQL and Pandas, system analysts can maximize their efficiency
 # Approaches to solving standard problems Pandas vs SQL
 https://media.licdn.com/dms/document/media/D561FAQGSIx_aExvz1w/feedshare-document-pdf-analyzed/0/1723738960495?e=1724889600&v=beta&t=hN7t06uFPCec2wxi_6GxZpmnQOJCXsvjZpRouHwMkKQ
 
+# EDA (Exploratory Data Analysis)
+Before diving into formal analysis with a dataset, it is often helpful to perform some initial investigations of the data through exploratory data analysis (EDA) to get a better sense of what you will be working with. Basic summary statistics and visualizations are important components of EDA as they allow us to condense a large amount of information into a small set of numbers or graphics that can be easily interpreted.
+
+**describe()** function in Pandas is a powerful tool for exploratory data analysis (**EDA**). It provides a quick summary of the dataset's statistical properties, helping you understand the distribution and characteristics of your data. Here’s a detailed overview of its functionality:
+```
+# Basic Syntax:
+df.describe()
+
+# Handling Non-Numeric Data:
+df.describe(include='object')
+
+# Handling Non-Numeric And Numeric Data:
+df.describe(include='all')
+
+# Specify custom percentiles:
+# df.describe(percentiles=[0.2, 0.5, 0.8])
+```
+
 # The Importance of Data Quality Checks
 In the realm of data analysis, the quality of the data you work with is paramount. No matter how sophisticated your analysis techniques or tools may be, the results are only as reliable as the data that underpins them. This is why it is crucial to perform thorough checks on data to ensure it meets the necessary standards before diving into analysis or modeling. Specifically, we focus on four key dimensions of data quality: Completeness, Consistency, Accuracy, and Integrity. Each of these dimensions plays a critical role in ensuring that your data is both reliable and meaningful.
 
