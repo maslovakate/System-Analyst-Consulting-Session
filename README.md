@@ -44,6 +44,21 @@ df.describe(include='all')
 # Specify custom percentiles:
 # df.describe(percentiles=[0.2, 0.5, 0.8])
 ```
+## Results for Numeric Columns
+**Count**: Number of non-null entries.
+**Mean**: Average value of the numeric entries.
+**Std**: Standard deviation, indicating the spread of the data. Measures how much the data values deviate from the mean (average) value of the dataset.
+**Min**: Minimum value in the column.
+**25%**: 25th percentile (first quartile). Means 25% of your data is less or equal to that specific numeric value.
+**50%**: 50th percentile (median). Means 50% of your data is less or equal to that specific numeric value.
+**75%**: 75th percentile (third quartile). Means 75% of your data is less or equal to that specific numeric value.
+**Max**: Maximum value in the column.
+
+## Results for Non-Numeric Columns
+**Count**: Number of non-null entries.
+**Unique**: Number of unique values in the column.
+**Top**: Most frequently occurring value.
+**Freq**: Frequency of the most common value.
 
 # The Importance of Data Quality Checks
 In the realm of data analysis, the quality of the data you work with is paramount. No matter how sophisticated your analysis techniques or tools may be, the results are only as reliable as the data that underpins them. This is why it is crucial to perform thorough checks on data to ensure it meets the necessary standards before diving into analysis or modeling. Specifically, we focus on four key dimensions of data quality: Completeness, Consistency, Accuracy, and Integrity. Each of these dimensions plays a critical role in ensuring that your data is both reliable and meaningful.
