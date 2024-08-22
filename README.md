@@ -114,8 +114,8 @@ print("Orders with Missing Customer References:\n", missing_customers)
 This will identify any rows in df_orders where the customer_id does not exist in df_customers, indicating a potential integrity issue.
 
 ## Summary:
-- **Completeness:** Use isnull() to check for missing data.
-- **Consistency:** Use dtypes to check data types and validate expected ranges or formats.
+- **Completeness:** Use **isnull()** to check for missing data.
+- **Consistency:** Use **dtypes** to check data types and validate expected ranges or formats.
 - **Accuracy:** Validate data against realistic boundaries or external references.
-- **Integrity:** Use isin() to ensure that relationships between tables are maintained.
+- **Integrity:** Use **isin()** to ensure that relationships between tables are maintained.
 These checks help ensure that your data is reliable and ready for analysis, preventing errors and inconsistencies in downstream processes.
