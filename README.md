@@ -30,7 +30,7 @@ https://media.licdn.com/dms/document/media/D561FAQGSIx_aExvz1w/feedshare-documen
 # The Importance of Data Quality Checks
 In the realm of data analysis, the quality of the data you work with is paramount. No matter how sophisticated your analysis techniques or tools may be, the results are only as reliable as the data that underpins them. This is why it is crucial to perform thorough checks on data to ensure it meets the necessary standards before diving into analysis or modeling. Specifically, we focus on four key dimensions of data quality: Completeness, Consistency, Accuracy, and Integrity. Each of these dimensions plays a critical role in ensuring that your data is both reliable and meaningful.
 
-## 1. Completeness
+## 1. Completeness (Полнота)
 - **Definition**: Completeness refers to the extent to which all required data is present.
 - **Example:** Checking for missing values in a DataFrame.
 
@@ -52,7 +52,7 @@ missing_values = df.isnull().sum()
 print("Missing Values:\n", missing_values)
 ```
 
-## 2. Consistency
+## 2. Consistency (Согласованность)
 - **Definition:** Consistency ensures that data follows the same format or structure throughout the dataset.
 - **Example:** Checking for consistent data types in each column
 
@@ -74,7 +74,7 @@ inconsistent_age = df[~df['age'].between(1, 100, inclusive='both')]
 print("Inconsistent Age Values:\n", inconsistent_age)
 ```
 
-## 3. Accurancy
+## 3. Accurancy (Точность)
 - **Definition:** Accuracy ensures that data correctly reflects the real-world values it represents.
 - **Example:** Checking if the 'age' column contains only realistic ages.
 
@@ -88,7 +88,7 @@ print("Inaccurate Age Values:\n", inaccurate_age)
 
 You can also use external reference data to cross-check the accuracy of certain fields, such as addresses or product IDs.
 
-## 4. Integrity
+## 4. Integrity (Целостность)
 - **Definition:** Integrity refers to the logical coherence of the data, ensuring that relationships between data points are correct.
 - **Example:** Checking if all id values in one table exist in another (foreign key relationship).
 
