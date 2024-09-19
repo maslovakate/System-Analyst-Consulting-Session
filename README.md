@@ -25,7 +25,7 @@ However, as data becomes increasingly complex and diverse, there are limitations
 By leveraging both SQL and Pandas, system analysts can maximize their efficiency and effectiveness in handling a wide range of data tasks, from simple queries to complex transformations and analyses.
 
 # Approaches to solving standard problems Pandas vs SQL
-https://media.licdn.com/dms/document/media/D561FAQGSIx_aExvz1w/feedshare-document-pdf-analyzed/0/1723738960495?e=1724889600&v=beta&t=hN7t06uFPCec2wxi_6GxZpmnQOJCXsvjZpRouHwMkKQ
+[https://media.licdn.com/dms/document/media/D561FAQGSIx_aExvz1w/feedshare-document-pdf-analyzed/0/1723738960495?e=1724889600&v=beta&t=hN7t06uFPCec2wxi_6GxZpmnQOJCXsvjZpRouHwMkKQ](https://pandas.pydata.org/docs/getting_started/comparison/comparison_with_sql.html)
 
 # EDA (Exploratory Data Analysis)
 Before diving into formal analysis with a dataset, it is often helpful to perform some initial investigations of the data through exploratory data analysis (EDA) to get a better sense of what you will be working with. Basic summary statistics and visualizations are important components of EDA as they allow us to condense a large amount of information into a small set of numbers or graphics that can be easily interpreted.
